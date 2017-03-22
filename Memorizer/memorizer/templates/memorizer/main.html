@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+  <title>Memorizer</title>
+  <meta charset="UTF-8"/>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../static/main.css"/>
+</head>
+
+
+
+<body>
+
+<div class="container-fluid">
+  <header>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container navbar">
+
+      <ul class="nav nav-pills">
+        <li role="presentation" class="active"><a href="/memorizer/main/"><h4>HOME</h4></a></li>
+        <li role="presentation"><a href="/memorizer/learn/"><h4>LEARN</h4></a></li>
+        <li role="presentation"><a href="/memorizer/add/"><h4>ADD</h4></a></li>
+        <!--<li role="presentation"><a href="/memorizer/">ABOUT</a></li>-->
+
+      </ul>
+    </div>
+  </nav>
+
+</header>
+</div>
+
+<div class="container-fluid">
+<div class="jumbotron">
+
+    <h1>Welcome {{ username }}.</h1>
+  <p title="to 'memorize' a card, you must review it ?? times">You have memorized {{ numMemorized }} cards to date.</p>
+  <p title="# of days in a row you have reviewed your cards">Streak: {{ streak }}</p>
+  <p title="# of cards to review today">Cards to Review: {{ numToReview }}</p>
+
+</div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3">
+      <a href="/memorizer/learn/">
+        <div class="panel panel-primary">
+          <div class="panel-heading"><h2>Learn</h2></div>
+
+          <div class="panel-body">
+            <h5>Click to review today's cards.</h5>
+              <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-sm-3">
+      <a href="/memorizer/add/">
+        <div class="panel panel-primary">
+          <div class="panel-heading"><h2>Add</h2></div>
+
+          <div class="panel-body">
+            <h5>Click to add cards to review and eventually memorize.</h5>
+              <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-sm-3">
+      <a href="/memorizer/info/">
+        <div class="panel panel-primary">
+          <div class="panel-heading"><h2>About</h2></div>
+
+          <div class="panel-body">
+            <h5>Click to read about the science behind Memorizer.</h5>
+            <span class="glyphicon glyphicon-font" aria-hidden="true"></span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-sm-3">
+      <a href="/memorizer/login/">
+        <div class="panel panel-primary">
+          <div class="panel-heading"><h2>Logout</h2></div>
+
+          <div class="panel-body">
+            <h5>Click to Logout of your account.</h5>
+            <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
+
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+</body>
+
+
+
+<footer>
+
+
+</footer>
+
+
+</html>
+
